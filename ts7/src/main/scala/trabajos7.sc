@@ -1,6 +1,6 @@
 // Función de integración utilizando el método de Simpson 1/3
 def integracion(f: Double => Double, a: Double, b: Double): Double = {
-  val x = (a + b) / 2 // Punto medio entre a y b
+  val x: Double = (a + b) / 2 // Punto medio entre a y b
   ((b - a) / 6) * (f(a) + 4 * f(x) + f(b)) // Fórmula del método de Simpson 1/3
 }
 
@@ -22,13 +22,13 @@ def calcularError(valorEsperado: Double, valorObtenido: Double): Double = {
   math.abs(valorEsperado - valorObtenido) // calcula el valor absoluto de la diferencia
 }
 
-val valorEsperado1 = 7.33
-val valorEsperado2 = 8.0
-val valorEsperado3 = 3.333
-val valorEsperado4 = 1.09861
-val valorEsperado5 = 1.71828
-val valorEsperado6 = 0.828427
-val valorEsperado7 = 0.785398
+val valorEsperado1: Double = 7.33
+val valorEsperado2: Double = 8.0
+val valorEsperado3: Double = 3.333
+val valorEsperado4: Double = 1.09861
+val valorEsperado5: Double = 1.71828
+val valorEsperado6: Double = 0.828427
+val valorEsperado7: Double = 0.785398
 
 val error1: Double = calcularError(valorEsperado1, res)
 
